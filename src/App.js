@@ -1,12 +1,15 @@
-import './App.css';
-import Archive from './components/Archive/Archive';
-import Trading from './components/Trading/Trading';
+import "./App.css";
+import Terminal from "./pages/terminal/terminal";
 
 function App() {
   return (
-    <div className="App">
-      <Archive/>
-      <Trading/>
+    <div className="app">
+      <header className="app-header">
+        <h2>Terminal App</h2>
+      </header>
+      <main className="app-main">
+        <Terminal></Terminal>
+      </main>
     </div>
   );
 }

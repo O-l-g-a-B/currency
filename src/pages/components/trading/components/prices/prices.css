@@ -1,0 +1,20 @@
+.prices {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+  }
+  
+  .prices__item {
+    display: flex;
+    flex-direction: column;
+  
+    justify-content: center;
+    align-items: center;
+  
+    font-size: 50px;
+    color: red;
+  }
+  
+  .prices__item_buy {
+    color: green;
+  }
