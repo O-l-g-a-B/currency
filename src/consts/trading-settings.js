@@ -1,0 +1,1 @@
+export const SELL_BUY_PART_BIAS = 0.01;
