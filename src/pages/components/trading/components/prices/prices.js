@@ -1,14 +1,23 @@
 import "./prices.css";
+import formatPrice from "../../../../../utils/formatePrice";
+
+import TRADING_ACTIONS from "../../../../../consts/actions-trading-types";
 const Prices = (props) => {
   return (
     <div className="prices">
-      <div className="prices__item">
-        <span>BUY</span>
-        <span>{props.buy && props.buy.toFixed(4)}</span>
+      <div
+        className="prices__item"
+        onClick={() => props.onClick(TRADING_ACTIONS.buy)}
+      >
+        <span>{TRADING_ACTIONS.buy}</span>
+        <span>{formatPrice(props.buy)}</span>
       </div>
-      <div className="prices__item prices__item_buy">
+      <div
+        className="prices__item prices__item_buy"
+        onClick={() => props.onClick(TRADING_ACTIONS.sell)}
+      >
         <span>SELL</span>
-        <span>{props.sell && props.sell.toFixed(4)}</span>
+        <span>{formatPrice(props.sell)}</span>
       </div>
     </div>
   );

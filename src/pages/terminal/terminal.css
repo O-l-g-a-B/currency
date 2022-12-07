@@ -1,17 +1,29 @@
 .terminal {
-    border-radius: 10px;
-    width: 90%;
-    height: 100vh;
-    background-color: aliceblue;
-  
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
+  border-radius: 10px;
+  width: 90%;
+  min-width: 310px;
+  height: 60vh;
+  background-color: aliceblue;
+
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+}
+
+.terminal__tab {
+  margin: 10px;
+
+  width: 30%;
+  height: 40px;
+}
+
+.terminal__tab_selected {
+  background-color: rgb(159, 159, 212);
+}
+
+@media screen and (min-width: 1024px) {
+  .terminal {
+    width: 500px;
+    height: 400px;
   }
-  
-  @media screen and (min-width: 1024px) {
-    .terminal {
-      width: 500px;
-      height: 400px;
-    }
-  }
+}

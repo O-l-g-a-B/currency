@@ -1,0 +1,22 @@
+.archive {
+  padding: 20px;
+}
+
+.archive__table {
+  display: block;
+  border-spacing: 10px;
+}
+
+.archive__table-body {
+  display: block;
+  max-height: 170px;
+  overflow-y: auto;
+}
+
+.archive__cell_sell {
+  color: red;
+}
+
+.archive__cell_buy {
+  color: green;
+}

@@ -10,17 +10,23 @@ const Terminal = () => {
   const [activeTabIndexTrading, setActiveTabIndex] =
     useState(TRADING_TAB_INDEX);
 
+  const addIfSelectedClass = (indexToCheck) => {
+    return indexToCheck === activeTabIndexTrading
+      ? "terminal__tab_selected"
+      : "";
+  };
+
   return (
     <div className="terminal">
       <nav className="terminal__tab-group">
         <button
-          className="terminal__tab"
+          className={`terminal__tab ${addIfSelectedClass(TRADING_TAB_INDEX)}`}
           onClick={() => setActiveTabIndex(TRADING_TAB_INDEX)}
         >
           Trading
         </button>
         <button
-          className="terminal__tab"
+          className={`terminal__tab ${addIfSelectedClass(ARCHIVE_TAB_INDEX)}`}
           onClick={() => setActiveTabIndex(ARCHIVE_TAB_INDEX)}
         >
           Archive

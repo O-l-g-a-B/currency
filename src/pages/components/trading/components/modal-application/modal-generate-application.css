@@ -1,0 +1,56 @@
+.modal-background {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999;
+    background-color: rgb(231 228 228 / 50%);
+  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .modal {
+    min-width: 300px;
+    min-height: 400px;
+    background-color: white;
+  
+    padding: 20px;
+  }
+  .modal__info {
+    display: flex;
+    justify-content: space-between;
+  }
+  .modal-info__item {
+    font-weight: bold;
+  }
+  
+  .modal-info__item_sell {
+    color: red;
+  }
+  
+  .modal-info__item_buy {
+    color: green;
+  }
+  
+  .modal__action {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  
+  .modal__controls {
+    display: flex;
+    justify-content: space-between;
+  }
+  .modal__alert {
+    margin-top: 15px;
+  }
+  .modal__alert_error {
+    color: red;
+  }
+  
+  .modal__alert_success {
+    color: green;
+  }
